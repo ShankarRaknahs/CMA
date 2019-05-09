@@ -1,0 +1,19 @@
+{
+  "name": "manager",
+  "version": "1.0.0",
+  "description": "A Contact Management Application (CMA)",
+  "main": "manager.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShankarRaknahs/CMA.git"
+  },
+  "author": "Shankar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShankarRaknahs/CMA/issues"
+  },
+  "homepage": "https://github.com/ShankarRaknahs/CMA#readme"
+}
