@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/ShankarRaknahs/CMA/issues"
   },
-  "homepage": "https://github.com/ShankarRaknahs/CMA#readme"
+  "homepage": "https://github.com/ShankarRaknahs/CMA#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "log4js": "^4.1.1"
+  }
 }
