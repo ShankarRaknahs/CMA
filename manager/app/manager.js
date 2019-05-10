@@ -26,7 +26,12 @@ const conf = require('../config/manager.config')[env];
  * Setup Middleware(Express) and execute the server
  *********************************************************************************/
 const express = require('express');
+const bodyParser = require('body-parser');
 const app = express();
+
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.json());
+
 
 app.listen(conf['server_port'], () => {
 console.info("Contact Manager is listening in " + conf['server_port']);

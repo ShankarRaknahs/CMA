@@ -25,7 +25,7 @@ Logger.prototype.logUtility = function() {
     const log = log4js.getLogger("app");
     return log;
   } catch (error) {
-    console.log(`Error in Logger module initialiation ==> ${error}`);
-    return undefined;
+    console.log(`Error in Logger module initialiation ==> ${error}, Exiting Process`);
+    process.exit();
   }
 };
