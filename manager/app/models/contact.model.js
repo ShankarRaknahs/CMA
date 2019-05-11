@@ -13,8 +13,8 @@ const ContactSchema = mongoose.Schema(
         return validator.isEmail(value);
       }
     },
-    Phone: {
-        type: Number,
+    phone: {
+        type: String,
         required: true,
         unique: true,
         validate: value => {

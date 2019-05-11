@@ -1,6 +1,6 @@
 var conf = {
     dev: {
-        database_url : "",
+        database_url : "mongodb://localhost:27017/CMA",
         server_port  : 3333
     },
 
