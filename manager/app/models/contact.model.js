@@ -13,7 +13,7 @@ let validator = require('validator');
 const ContactSchema = mongoose.Schema(
   {
     name: String,
-    tags: [String],
+    groups: [String],
     work: {
       email: [{
         type: String,

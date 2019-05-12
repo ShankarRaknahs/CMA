@@ -12,7 +12,7 @@ const Contact = require("../models/contact.model");
 exports.aggregate = (req, res) => {
   Contact.aggregate([
     {
-      $match: { "tags": req.params.groupName }
+      $match: { "groups": req.params.groupName }
     }
   ]).then(group => {
     if (!group) {
