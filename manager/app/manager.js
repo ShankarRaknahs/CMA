@@ -62,6 +62,7 @@ app.use(bodyParser.json());
 
 require("./routes/contact.route")(app);
 require("./routes/group.route")(app);
+require("./routes/search.route")(app);
 
 app.listen(conf["server_port"], () => {
   console.info("Contact Manager is listening in " + conf["server_port"]);

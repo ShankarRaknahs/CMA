@@ -8,10 +8,12 @@
  */
 
 module.exports = (app) => {
-    const groups = require('../controllers/group.controller.js');
+    const search = require('../controllers/search.controller.js');
 
 /**********************************************************************************
 * Routing to retrieve the contact list using group name
 **********************************************************************************/
-app.get('/groups/:groupName', groups.aggregate);
+app.post('/search/name', search.findName);
+app.post('/search/email', search.findEmail);
+app.post('/search/phone', search.findPhone);
 }
