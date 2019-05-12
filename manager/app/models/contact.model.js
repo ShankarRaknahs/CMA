@@ -1,3 +1,12 @@
+"use strict";
+
+/**
+ * @author      Shankar
+ * @description Basic contact management contact model
+ * @param       req
+ * @returns     res
+ */
+
 const mongoose = require("mongoose");
 let validator = require('validator');
 
