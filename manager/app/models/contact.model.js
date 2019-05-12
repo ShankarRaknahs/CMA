@@ -13,22 +13,44 @@ let validator = require('validator');
 const ContactSchema = mongoose.Schema(
   {
     name: String,
-    email: {
-      type: String,
-      required: true,
-      unique: true,
-      lowercase: true,
-      validate: value => {
-        return validator.isEmail(value);
-      }
-    },
-    phone: {
+    tags: [String],
+    work: {
+      email: [{
         type: String,
         required: true,
         unique: true,
+        lowercase: true,
         validate: value => {
-            return validator.isMobilePhone(value);
+          return validator.isEmail(value);
         }
+      }],
+      phone: [{
+          type: String,
+          required: true,
+          unique: true,
+          validate: value => {
+              return validator.isMobilePhone(value);
+          }
+      }]
+    },
+    personal: {
+      email: [{
+        type: String,
+        required: true,
+        unique: true,
+        lowercase: true,
+        validate: value => {
+          return validator.isEmail(value);
+        }
+      }],
+      phone: [{
+          type: String,
+          required: true,
+          unique: true,
+          validate: value => {
+              return validator.isMobilePhone(value);
+          }
+      }]
     }
   },
   {
