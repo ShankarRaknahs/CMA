@@ -117,3 +117,6 @@
 [2019-05-12T23:31:23.135] [INFO] app - Logging initiated for CMA
 [2019-05-12T23:31:23.138] [INFO] app - App is running in -->dev<-- environment
 [2019-05-12T23:31:24.845] [INFO] app - Connected to the DB
+[2019-05-12T23:38:07.264] [INFO] app - Logging initiated for CMA
+[2019-05-12T23:38:07.267] [INFO] app - App is running in -->dev<-- environment
+[2019-05-12T23:38:09.063] [INFO] app - Connected to the DB

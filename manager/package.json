@@ -4,7 +4,8 @@
   "description": "A Contact Management Application (CMA)",
   "main": "manager.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "node ./app/manager.js"
   },
   "repository": {
     "type": "git",
